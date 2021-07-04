@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+import Link from 'next/link'
 export default function Home() {
   return (
     <div className="container">
@@ -10,7 +10,10 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Learn
+          Read {" "}
+          <Link href="posts/first-posts">
+          <a>This page!</a>
+          </Link>
         </h1>
 
         <p className="description">
